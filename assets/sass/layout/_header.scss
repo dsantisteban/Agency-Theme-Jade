@@ -1,0 +1,53 @@
+.navbar-default {
+	background-color: $gray-darkest;
+	border-color: transparent;
+	.navbar-brand {
+		color: $yellow;
+		@include kaushan-font();
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+        	color: rgba($yellow, 0.1);
+        }
+	}
+	.navbar-collapse {
+		border-color: rgba(white, 0.2);
+	}
+	.navbar-toggle {
+		background-color: $yellow;
+		border-color: $yellow;
+		.icon-bar {
+			background-color: white;
+		}
+		&:hover,
+		&:focus {
+			background-color: $yellow;
+		}
+	}
+    .nav {
+    	li {
+    		a {
+    			@include repeat-font();
+    			font-weight: 400;
+    			letter-spacing: 1px;
+    			color: white;
+    			&:hover,
+    			&:focus {
+    				color: $yellow;
+    				outline: none;
+    			}
+    		}
+    	}
+    }
+	.navbar-nav>.active>a {
+		border-radius: 0;
+		color: white;
+		background-color: $yellow;
+	}
+	.navbar-nav>.active>a:hover,
+	.navbar-nav>.active>a:focus {
+		color: white;
+		background-color: rgba($yellow, 10%);
+	}
+}

@@ -1,0 +1,27 @@
+aside {
+	@include background-cover;
+	background-attachment: scroll;
+	background-image: url('../../img/header-bg.jpg');
+	background-position: center center;
+	background-repeat: none;
+	color: white;
+	text-align: center;
+	.intro-text {
+		padding-top: 100px;
+		padding-bottom: 50px;
+		.intro-lead-in {
+			@include droid-font();
+			font-size: 22px;
+			font-style: italic;
+			line-height: 22px;
+			margin-bottom: 25px;
+		}
+		.intro-heading {
+			@include repeat-font();
+			font-size: 50px;
+			font-weight: 700;
+			line-height: 50px;
+			margin-bottom: 25px;
+		}
+	}
+}

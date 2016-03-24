@@ -1,0 +1,109 @@
+// Base
+body {
+	overflow-x: hidden;
+	@include roboto-font();
+}
+section {
+    padding: 100px 0;
+    h2.section-heading {
+		font-size: 40px;
+		margin-top: 0;
+		margin-bottom: 15px;
+    }
+    h3.section-subheading {
+		font-size: 16px;
+		@include droid-font();
+		text-transform: none;
+		font-style: italic;
+		font-weight: 400;
+		margin-bottom: 75px;
+    }
+}
+.text-gray {
+	color: $gray;
+}
+
+.text-yellow {
+	color: $yellow;
+}
+
+p {
+	font-size: 14px;
+	line-height: 1.75;
+}
+
+p.large {
+	font-size: 16px;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+	color: $yellow;
+}
+
+a {
+	outline: none;
+	color: $yellow;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	@include repeat-font();
+	font-weight: 700;
+}
+
+.img-mg-0 {
+	margin: 0 auto;
+}
+
+.bg-light-gray {
+	background-color: $gray-lighter;
+}
+
+.bg-darkest-gray {
+	background-color: $gray-darkest;
+}
+
+// boton-yellow
+
+.btn-yellow {
+	@include button-variant(white, $yellow, $yellow);
+	@extend h6;
+	border-radius: 3px;
+	font-size: 18px;
+	padding: 20px 40px;
+}
+// Redes Sociales botones
+
+ul.social-buttons {
+	margin-bottom: 0;
+	li {
+		a {
+			display: block;
+			background-color: $gray-darkest;
+			height: 40px;
+			width: 40px;
+			border-radius: 100%;
+			font-size: 20px;
+			line-height: 40px;
+			color: white;
+			outline: none;
+	        -webkit-transition: all 0.3s;
+	        -moz-transition: all 0.3s;
+	        transition: all 0.3s;
+	        &:hover,
+	        &:focus,
+	        &:active {
+				background-color: $yellow;
+	        }
+		}
+	}
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+	outline: none;
+}
